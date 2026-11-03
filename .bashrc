@@ -132,3 +132,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export SBX_CONFIG_REPO=~/Desktop/890labs/global-config
+# Alias to create a docker sandbox to use with Claude.
+# This alias runs the script from the global-config repository.
+# Check the main repo for more information: https://github.com/del890/global-config
+alias create_sbx='sh ~/Desktop/890labs/global-config/create-sbx.sh'
